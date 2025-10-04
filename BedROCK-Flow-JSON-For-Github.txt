@@ -1,5 +1,7 @@
 {
     "name": "Quiz-Flow",
+{
+    "name": "Quiz-Flow",
     "description": "This Flow will Generate a Quiz using the lambda function",
     "executionRoleArn": "arn:aws:iam::302263067206:role/service-role/AmazonBedrockExecutionRoleForFlows_BKPT8U8RAMH",
     "id": "RWI6WXFAZ8",
@@ -42,4 +44,61 @@
                 "type": "Agent",
                 "configuration": {
                     "agent": {
-:
+                        "agentAliasArn": "arn:aws:bedrock:us-east-1:302263067206:agent-alias/WFUWI1HSTD/M8IQPJLQE0"
+                    }
+                },
+                "inputs": [
+                    {
+                        "name": "agentInputText",
+                        "type": "String",
+                        "expression": "$.data"
+                    },
+                    {
+                        "name": "promptAttributes",
+                        "type": "Object",
+                        "expression": "$.data"
+                    },
+                    {
+                        "name": "sessionAttributes",
+                        "type": "Object",
+                        "expression": "$.data"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "agentResponse",
+                        "type": "String"
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            {
+                "type": "Data",
+                "name": "FlowInputNodeFlowInputNode0ToAgentsNode_1AgentsNode0",
+                "source": "FlowInputNode",
+                "target": "AgentsNode_1",
+                "configuration": {
+                    "data": {
+                        "sourceOutput": "document",
+                        "targetInput": "agentInputText"
+                    }
+                }
+            },
+            {
+                "type": "Data",
+                "name": "AgentsNode_1AgentsNode0ToFlowOutputNodeFlowOutputNode0",
+                "source": "AgentsNode_1",
+                "target": "FlowOutputNode",
+                "configuration": {
+                    "data": {
+                        "sourceOutput": "agentResponse",
+                        "targetInput": "document"
+                    }
+                }
+            }
+        ]
+    },
+    "validations": []
+}
+(END)
