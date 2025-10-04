@@ -1,0 +1,45 @@
+{
+    "name": "Quiz-Flow",
+    "description": "This Flow will Generate a Quiz using the lambda function",
+    "executionRoleArn": "arn:aws:iam::302263067206:role/service-role/AmazonBedrockExecutionRoleForFlows_BKPT8U8RAMH",
+    "id": "RWI6WXFAZ8",
+    "arn": "arn:aws:bedrock:us-east-1:302263067206:flow/RWI6WXFAZ8",
+    "status": "Prepared",
+    "createdAt": "2025-10-04T13:49:48.048532+00:00",
+    "updatedAt": "2025-10-04T14:23:05.269277+00:00",
+    "version": "DRAFT",
+    "definition": {
+        "nodes": [
+            {
+                "name": "FlowInputNode",
+                "type": "Input",
+                "configuration": {
+                    "input": {}
+                },
+                "outputs": [
+                    {
+                        "name": "document",
+                        "type": "String"
+                    }
+                ]
+            },
+            {
+                "name": "FlowOutputNode",
+                "type": "Output",
+                "configuration": {
+                    "output": {}
+                },
+                "inputs": [
+                    {
+                        "name": "document",
+                        "type": "String",
+                        "expression": "$.data"
+                    }
+                ]
+            },
+            {
+                "name": "AgentsNode_1",
+                "type": "Agent",
+                "configuration": {
+                    "agent": {
+:
