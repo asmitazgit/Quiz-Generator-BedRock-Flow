@@ -166,6 +166,16 @@ Final Quiz Output:
 **ACTUAL WORKFLOW REFERENCE**
 
  <img width="940" height="453" alt="image" src="https://github.com/user-attachments/assets/4fb12698-ff30-455f-9639-7d924b4ddb4f" />
+ <img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/bc943cbb-e2bd-4c59-81ef-0de074ba0d21" />
+ <img width="940" height="454" alt="image" src="https://github.com/user-attachments/assets/a5f89ce1-5eed-46c4-9b8f-89f37c770915" />
+ <img width="940" height="451" alt="image" src="https://github.com/user-attachments/assets/f9a84745-67a0-4149-afbc-dcd252801c5e" />
+ <img width="940" height="461" alt="image" src="https://github.com/user-attachments/assets/cd7f13f5-6607-4aee-a8cd-3bb0c7067c91" />
+ <img width="940" height="420" alt="image" src="https://github.com/user-attachments/assets/cb87212d-d6c0-40de-966e-c34f6f9eb03e" />
+
+
+
+
+
 
  
 
