@@ -1,4 +1,5 @@
-***Quiz-Generator-BedROCK  Agent***
+**Quiz-Generator-BedROCK  Agent**
+
 This project demonstrates how to build an AI workflow using the BedROCK. It leverages contextual information from documents stored in a vector database (Astra DB) and an LLM provider (NOVA) to dynamically generate multiple-choice quizzes.
 
 **##Goal##**
