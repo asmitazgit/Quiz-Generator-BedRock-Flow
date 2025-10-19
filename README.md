@@ -2,7 +2,7 @@ Quiz-Generator-BedROCK  Agent
 
 **##Goal**
 
-An intelligent agent built  using BedROCK Flows which triggers Lambda Function where Lambda Function queries AstraDB to retrieve context of studt material.
+An intelligent agent built  using BedROCK Flows which triggers Lambda Function where Lambda Function queries AstraDB to retrieve context of  material so that it can generate MCQ quiz based on the study Material.
 
 
 User → Bedrock Flow → Lambda Function → AstraDB → Bedrock Agent → Foundation Model → Quiz Output
