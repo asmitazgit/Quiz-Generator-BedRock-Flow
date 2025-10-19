@@ -1,7 +1,7 @@
-##Quiz-Generator-BedROCK  Agent##
+***Quiz-Generator-BedROCK  Agent***
 This project demonstrates how to build an AI workflow using the BedROCK. It leverages contextual information from documents stored in a vector database (Astra DB) and an LLM provider (NOVA) to dynamically generate multiple-choice quizzes.
 
-##Goal##
+**##Goal##**
 The primary goal of this project is to:
 
 Ingest domain-specific documents.
@@ -12,7 +12,7 @@ Automatically generate a set of MCQs (Multiple Choice Questions) as a quiz.
 
 Demonstrate an AI workflow where external knowledge retrieval, reasoning, and LLM inference are combined seamlessly.
 
-##Solution Overview##
+**Solution Overview**
 Document Ingestion: User-provided documents are uploaded and embedded into Astra Vector DB for efficient similarity search.
 
 Query & Context Retrieval: At runtime, the system retrieves relevant document chunks based on the input query.
