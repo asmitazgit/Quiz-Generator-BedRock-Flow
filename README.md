@@ -161,6 +161,76 @@ Final Quiz Output:
     }
   ]
 }
+
+
+**ACTUAL WORKFLOW REFERENCE**
+ 
+ Here is a quiz on the role of Calcium:
+
+1. What is the primary role of calcium in the body?
+   a) Building bones and teeth
+   b) Regulating muscle contractions
+   c) Both a and b
+   d) None of the above
+
+2. Which of the following is a primary source of calcium?
+   a) Meat
+   b) Fruits
+   c) Dairy products
+   d) Vegetables
+
+3. How does calcium help in blood clotting?
+   a) By activating clotting factors
+   b) By forming a clot
+   c) By stopping bleeding
+   d) By none of the above
+
+4. What is the recommended daily intake of calcium for adults?
+   a) 1000 mg
+   b) 1200 mg
+   c) 1500 mg
+   d) 2000 mg
+
+5. Which of the following is a sign of calcium deficiency?
+   a) Brittle nails
+   b) Muscle cramps
+   c) Fatigue
+   d) All of the above
+
+6. What is the role of calcium in nerve function?
+   a) Transmitting nerve impulses
+   b) Regulating nerve activity
+   c) Both a and b
+   d) None of the above
+
+7. How does calcium help in maintaining a healthy weight?
+   a) By reducing appetite
+   b) By increasing metabolism
+   c) Both a and b
+   d) None of the above
+
+8. What is the role of calcium in bone health?
+   a) Building and maintaining bones
+   b) Preventing osteoporosis
+   c) Both a and b
+   d) None of the above
+
+9. Which of the following is a risk factor for calcium deficiency?
+   a) Age
+   b) Gender
+   c) Diet
+   d) All of the above
+
+10. What is the role of calcium in muscle function?
+    a) Contracting and relaxing muscles
+    b) Regulating muscle activity
+    c) Both a and b
+    d) None of the above
+
+Answers: 1) c, 2) c, 3) a, 4) a, 5) d, 6) c, 7) c, 8) c, 9) d, 10) c
+ 
+
+ 
 ________________________________________
 🔧 Export Flow JSON (for GitHub Versioning)
 Run from AWS CloudShell:
