@@ -15,6 +15,7 @@ Automatically generate a set of MCQs (Multiple Choice Questions) as a quiz.
 Demonstrate an AI workflow where external knowledge retrieval, reasoning, and LLM inference are combined seamlessly.
 
 **Solution Overview**
+
 Document Ingestion: User-provided documents are uploaded and embedded into Astra Vector DB for efficient similarity search.
 
 Query & Context Retrieval: At runtime, the system retrieves relevant document chunks based on the input query.
