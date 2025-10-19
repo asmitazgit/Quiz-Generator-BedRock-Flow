@@ -1,18 +1,36 @@
-Quiz-Generator-BedROCK  Agent
+##Quiz-Generator-BedROCK  Agent##
+This project demonstrates how to build an AI workflow using the BedROCK. It leverages contextual information from documents stored in a vector database (Astra DB) and an LLM provider (NOVA) to dynamically generate multiple-choice quizzes.
 
-**##Goal**
+##Goal##
+The primary goal of this project is to:
 
-An intelligent agent built  using BedROCK Flows which triggers Lambda Function where Lambda Function queries AstraDB to retrieve context of  material so that it can generate MCQ quiz based on the study Material.
+Ingest domain-specific documents.
 
+Use them as contextual knowledge for an LLM prompt.
+
+Automatically generate a set of MCQs (Multiple Choice Questions) as a quiz.
+
+Demonstrate an AI workflow where external knowledge retrieval, reasoning, and LLM inference are combined seamlessly.
+
+##Solution Overview##
+Document Ingestion: User-provided documents are uploaded and embedded into Astra Vector DB for efficient similarity search.
+
+Query & Context Retrieval: At runtime, the system retrieves relevant document chunks based on the input query.
+
+Prompt Assembly: The retrieved context is combined with the user query to form the final prompt.
+
+LLM Inference: The prompt is sent to an LLM(NOVA Model) which is hosted via BedROCK Agent, which generates a structured set of MCQs.
+
+Output Delivery: The generated quiz is returned in a human-readable format.
 
 User → Bedrock Flow → Lambda Function → AstraDB → Bedrock Agent → Foundation Model → Quiz Output
 
 ### 🔹 How It Works
 1. The **user** provides a topic, difficulty, and number of questions.
 2. The **Bedrock Flow** triggers a **Lambda function** (via Action Group).
-3. The Lambda queries **AstraDB** (using the DataStax REST API or Cassandra driver) to retrieve context or study material.
+3. The Lambda queries **AstraDB** (using the DataStax REST API) to retrieve context or study material.
 4. The retrieved text is sent back to the **Bedrock Agent**.
-5. The Agent prompts a **Foundation Model** (Claude 3, Titan Text, etc.) to generate a multiple-choice quiz.
+5. The Agent prompts a **Foundation Model** (NOVA Model or Claude or Tital depends on which LLM model u have selected) to generate a multiple-choice quiz.
 6. The Flow outputs a structured JSON quiz result.
 
 ---
