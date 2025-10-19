@@ -70,11 +70,7 @@ User → Bedrock Flow → Lambda Function → AstraDB → Bedrock Agent → Foun
    - Keyspace name
    - Application Token (with API access)
 3. Create a collection or table for your knowledge base:
-   ```sql
-   CREATE TABLE quiz_knowledge (
-     topic text PRIMARY KEY,
-     content text
-   );
+  
 4.	Insert some learning content relevant to quiz topics.
 ________________________________________
 3. Create Lambda Function
